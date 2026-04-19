@@ -1,6 +1,21 @@
-export async function onRequestPost(context) {
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+
+    if (url.pathname === "/api/contact" && request.method === "POST") {
+      return handleContact(request, env);
+    }
+
+    if (env.ASSETS) {
+      return env.ASSETS.fetch(request);
+    }
+
+    return new Response("Not found", { status: 404 });
+  },
+};
+
+async function handleContact(request, env) {
   try {
-    const { request, env } = context;
     const contentType = request.headers.get("content-type") || "";
 
     if (!contentType.includes("application/json")) {

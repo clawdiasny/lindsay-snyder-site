@@ -1,25 +1,29 @@
 # Lindsay Snyder website
 
-Static multi-page site for deployment on Cloudflare Pages.
+Static multi-page site deployed as a Cloudflare Worker with static assets.
 
 ## Contact form setup
 
-This site includes a contact form that submits to a Cloudflare Pages Function at `/api/contact`.
+This site includes a contact form that submits to the Worker endpoint at `/api/contact`.
 
-### Required Cloudflare Pages environment variables
+## Required Cloudflare Worker secrets / variables
 
-Add these in Cloudflare Pages project settings under **Settings → Environment variables**:
+In Cloudflare, open the Worker project and add these runtime values:
 
 - `RESEND_API_KEY`
-  - Your Resend API key.
+  - Your Resend API key
 - `CONTACT_TO_EMAIL`
-  - The inbox that should receive form submissions.
+  - The inbox that should receive form submissions
   - Example: `LindsaySnyderSLP@gmail.com`
 - `CONTACT_FROM_EMAIL`
-  - A verified sender identity in Resend.
+  - A verified sender identity in Resend
   - Example: `website@yourdomain.com`
 
-### Recommended email provider
+Recommended:
+- store `RESEND_API_KEY` as a **secret**
+- store `CONTACT_TO_EMAIL` and `CONTACT_FROM_EMAIL` as variables or secrets
+
+## Recommended email provider
 
 Use [Resend](https://resend.com/) for the simplest Cloudflare-compatible setup.
 
@@ -30,11 +34,13 @@ Notes:
 
 ## Deployment
 
-Cloudflare Pages settings:
-- Framework preset: `None`
-- Build command: leave blank
-- Build output directory: `/`
+This repo is configured for a Cloudflare Worker deployment with static assets.
+
+Key files:
+- `worker.js` → Worker entrypoint
+- `wrangler.json` → Worker config
+- static HTML/CSS/assets served from repo root via Cloudflare assets binding
 
 ## Local editing
 
-Any HTML/CSS/JS changes in this repo can be committed and pushed to GitHub. Cloudflare Pages will auto-deploy from the connected branch.
+Any HTML/CSS/JS changes in this repo can be committed and pushed to GitHub. Cloudflare will auto-deploy from the connected branch.
