@@ -92,7 +92,12 @@
       margin: 0 4px 0 0;
       color: var(--muted);
     }
-    .nav-links a:hover { color: var(--primary); text-decoration: none; }
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--primary); text-decoration: none; }
+
+    .nav-links a.active {
+      font-weight: 600;
+    }
     .nav-cta {
       padding: 7px 14px;
       border-radius: 999px;
@@ -219,7 +224,7 @@
       </div>
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html" class="active" aria-current="page">About</a>
         <a href="services.html">Services</a>
         <a href="adults-served.html">Adults Served</a>
         <a href="resources.html">Resources</a>

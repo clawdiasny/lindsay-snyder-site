@@ -105,7 +105,12 @@
       color: var(--muted);
     }
 
-    .nav-links a:hover { color: var(--primary); text-decoration: none; }
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--primary); text-decoration: none; }
+
+    .nav-links a.active {
+      font-weight: 600;
+    }
 
     .nav-cta {
       padding: 7px 14px;
@@ -317,7 +322,7 @@
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="services.html">Services</a>
+        <a href="services.html" class="active" aria-current="page">Services</a>
         <a href="adults-served.html">Adults Served</a>
         <a href="resources.html">Resources</a>
         <a href="https://www.instagram.com/lindsaysnyderslp" target="_blank" rel="noopener noreferrer">Instagram</a>
