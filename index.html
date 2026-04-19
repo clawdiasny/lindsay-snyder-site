@@ -1,0 +1,585 @@
+<!-- Version: 2.1.0 | Generated: 2026-04-19 13:30 EDT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lindsay Snyder, M.S. CCC‑SLP | Neurocognitive, Language & Speech Therapy for Adults</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Martin County, FL speech-language pathologist specializing in adult cognitive, language, speech, and swallowing therapy in a calm, coastal-inspired setting."
+  />
+  <meta property="og:title" content="Lindsay Snyder, M.S. CCC‑SLP | Neurocognitive, Language &amp; Speech Therapy for Adults" />
+  <meta property="og:description" content="Adult neurocognitive, language, speech, and swallowing therapy services in Martin County, FL." />
+  <meta property="og:image" content="lindsay.png" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --bg: #f6fafb;
+      --bg-alt: #ffffff;
+      --primary: #d88fa8;
+      --primary-soft: #fbe9f1;
+      --accent: #f2b485;
+      --accent-soft: #fdf0e4;
+      --ink: #253036;
+      --muted: #6c7a83;
+      --border: #dde6ea;
+      --max-width: 980px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --shadow-soft: 0 18px 45px rgba(18, 52, 63, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #ffffff 0, #f6fafb 55%, #edf3f6 100%);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: url("surfboards.png") center top / contain no-repeat fixed;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      padding: 18px 16px 8px;
+      background: linear-gradient(120deg, rgba(216, 238, 241, 0.9), rgba(255, 255, 255, 0.9));
+      border-bottom: 1px solid rgba(221, 230, 234, 0.7);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand { text-align: center; }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-links a {
+      font-size: 0.86rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .nav-links a + a::before {
+      content: "|";
+      margin: 0 4px 0 0;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .nav-links a.active {
+      font-weight: 600;
+    }
+
+    .nav-cta {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(42, 111, 123, 0.18);
+      background: rgba(255, 255, 255, 0.9);
+      font-size: 0.8rem;
+      color: var(--primary);
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-soft);
+      border-color: rgba(42, 111, 123, 0.3);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 18px 16px 32px;
+    }
+
+    .hero {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .hero-main,
+    .hero-side,
+    .highlight-card,
+    .card,
+    .contact-details {
+      background: var(--bg-alt);
+      border: 1px solid rgba(221, 230, 234, 0.9);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-main {
+      padding: 30px 28px 28px;
+      border-radius: 26px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-main::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(242, 180, 133, 0.16), transparent 55%);
+      pointer-events: none;
+    }
+
+    .hero-inner { position: relative; z-index: 1; }
+
+    .hero-side {
+      border-radius: 22px;
+      padding: 22px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(251,233,241,0.65));
+    }
+
+    .tagline {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+      line-height: 1.14;
+      font-family: "Playfair Display", "Times New Roman", serif;
+      color: var(--ink);
+    }
+
+    .hero-subtitle {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    .hero-list,
+    .mini-list,
+    .credentials-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .hero-list li,
+    .mini-list li,
+    .credentials-list li { margin-bottom: 5px; }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin: 18px 0 10px;
+    }
+
+    .btn-primary,
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+      padding: 10px 18px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2a6f7b, #245b64);
+      color: #fff;
+      border: none;
+      box-shadow: 0 12px 26px rgba(26, 78, 89, 0.45);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(37, 48, 54, 0.12);
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--muted);
+    }
+
+    .btn-primary:hover,
+    .btn-outline:hover { text-decoration: none; }
+    .btn-primary:hover { filter: brightness(1.03); }
+    .btn-outline:hover { background: var(--primary-soft); }
+
+    .hero-note {
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .hero-note strong,
+    .accent-text { color: var(--primary); }
+
+    .side-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      margin: 0 0 4px;
+    }
+
+    .side-title {
+      margin: 0 0 6px;
+      font-size: 1.2rem;
+      font-family: "Playfair Display", serif;
+    }
+
+    .side-copy {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    section { margin: 36px 0 0; }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      font-family: "Playfair Display", serif;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+      max-width: 760px;
+    }
+
+    .grid-2,
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .highlight-card,
+    .card {
+      border-radius: var(--radius-md);
+      padding: 20px 18px 18px;
+      font-size: 0.95rem;
+    }
+
+    .highlight-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(246,250,251,0.92));
+    }
+
+    .card h3,
+    .highlight-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+      font-family: "Playfair Display", serif;
+    }
+
+    .card p,
+    .highlight-card p { color: var(--muted); }
+
+    .feature-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .contact-details {
+      font-size: 0.95rem;
+      color: var(--muted);
+      background: rgba(216, 238, 241, 0.45);
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+    }
+
+    .contact-details p { margin: 6px 0; }
+
+    footer {
+      border-top: 1px solid rgba(221, 230, 234, 0.9);
+      padding: 18px 16px 22px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      background: linear-gradient(180deg, #f3f7f8, #edf3f6);
+      margin-top: 28px;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    @media (max-width: 800px) {
+      header { padding-bottom: 10px; }
+
+      body::before {
+        background: url("surfboards.png") center top / cover no-repeat fixed;
+        opacity: 0.35;
+      }
+
+      .container {
+        padding: 16px 14px 24px;
+      }
+
+      .hero,
+      .grid-2,
+      .highlight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        margin-top: 14px;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .card,
+      .highlight-card,
+      .hero-main,
+      .hero-side {
+        padding: 18px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <img src="lindsay.png" alt="Lindsay Snyder, M.S. CCC‑SLP" style="height: 216px; width: auto; display: block; margin: 0 auto;" />
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="adults-served.html">Adults Served</a>
+        <a href="resources.html">Resources</a>
+        <a href="https://www.instagram.com/lindsaysnyderslp" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="top">
+      <div class="hero-main">
+        <div class="hero-inner">
+          <div class="tagline">Martin County, Florida</div>
+          <h1>Evidence‑based care for adult neurocognitive, language, speech, and swallowing needs.</h1>
+          <p class="hero-subtitle">
+            Calm, personalized therapy to help adults navigate changes in thinking, communication, and swallowing so daily life feels safer, clearer, and more manageable.
+          </p>
+          <ul class="hero-list">
+            <li>Adult-only practice</li>
+            <li>Neurocognitive, language, speech, and swallowing therapy</li>
+            <li>In-person and virtual therapy options</li>
+            <li>Rooted in research, tailored to everyday life</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn-primary">Request an Appointment</a>
+            <a href="services.html" class="btn-outline">Explore Services</a>
+          </div>
+          <div class="hero-note">
+            Adult-only practice serving <strong>Tequesta, Hobe Sound, Jupiter Island, and Stuart</strong>, and the surrounding area.
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div>
+          <p class="side-kicker">A calm place to begin</p>
+          <h2 class="side-title">Specialized adult care with a practical focus.</h2>
+          <p class="side-copy">
+            Lindsay helps adults and families work toward real-life goals like clearer communication, safer swallowing, stronger daily routines, and greater confidence at home and in the community.
+          </p>
+        </div>
+        <div>
+          <p class="side-kicker">Common reasons people reach out</p>
+          <ul class="mini-list">
+            <li>Changes after stroke, brain injury, or neurological illness</li>
+            <li>Word-finding, memory, attention, or problem-solving concerns</li>
+            <li>Speech clarity or swallowing changes affecting daily life</li>
+          </ul>
+        </div>
+        <div>
+          <a href="adults-served.html" class="feature-link">See who Lindsay serves →</a>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <h2>Welcome</h2>
+      <p class="section-intro">
+        This site is now organized into dedicated pages, making it easier for adults, families, and referral sources to move directly to the information they need.
+      </p>
+      <div class="highlight-grid">
+        <div class="highlight-card">
+          <h3>About Lindsay</h3>
+          <p>Learn about Lindsay’s background, clinical approach, and specialized adult-focused training.</p>
+          <a href="about.html" class="feature-link">Visit About →</a>
+        </div>
+        <div class="highlight-card">
+          <h3>Services</h3>
+          <p>Review therapy options for cognitive communication, language, speech, and swallowing support.</p>
+          <a href="services.html" class="feature-link">Visit Services →</a>
+        </div>
+        <div class="highlight-card">
+          <h3>Adults Served</h3>
+          <p>See the diagnoses and communication changes commonly supported in the practice.</p>
+          <a href="adults-served.html" class="feature-link">Visit Adults Served →</a>
+        </div>
+        <div class="highlight-card">
+          <h3>Resources</h3>
+          <p>Browse printable tools, community supports, and recommended items on a dedicated resources page.</p>
+          <a href="resources.html" class="feature-link">Visit Resources →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>About Lindsay</h2>
+      <div class="grid-2" style="margin-bottom: 18px; align-items: center;">
+        <div>
+          <p class="section-intro">
+            Lindsay is a licensed speech‑language pathologist with focused training and experience in adult cognitive communication and language disorders. She has a unique background across inpatient rehabilitation and outpatient therapy, and as a native Floridian from Martin County, she is passionate about serving adults in her local community.
+          </p>
+        </div>
+        <div style="text-align: center;">
+          <img src="lindsay-headshot.jpg" alt="Photo of Lindsay Snyder, M.S. CCC‑SLP" style="width: 100%; max-width: 260px; border-radius: 18px; object-fit: cover; box-shadow: 0 10px 26px rgba(18, 52, 63, 0.18);" />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Clinical Approach</h3>
+          <p>
+            Lindsay’s work is grounded in evidence‑based practice and centered on functional goals. Sessions are calm, structured, and tailored to what matters most: everyday conversations, managing home and finances, returning to work, and participating fully in life.
+          </p>
+          <ul class="credentials-list">
+            <li>Functional, real‑world communication goals</li>
+            <li>Evidence‑based assessment and treatment</li>
+            <li>Close collaboration with families and care teams</li>
+            <li>Flexible in‑person and telehealth visit options</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Education &amp; Credentials</h3>
+          <ul class="credentials-list">
+            <li>B.S. in Communication Sciences and Disorders – University of Central Florida</li>
+            <li>M.S. in Speech‑Language Pathology – Eastern New Mexico University</li>
+            <li>Certificate of Clinical Competence (CCC‑SLP), ASHA</li>
+            <li>Licensed Speech‑Language Pathologist – Florida</li>
+            <li>Extensive experience with adult neurological populations</li>
+            <li>Additional training in cognitive rehabilitation &amp; aphasia care</li>
+            <li>Ongoing contributor to a local stroke support group for over eight years in collaboration with Cleveland Clinic and Encompass Health</li>
+          </ul>
+
+          <p style="margin-top: 12px; font-size: 0.9rem; color: var(--muted);">
+            <span class="accent-text" style="font-weight: 600;">Specialized training includes</span> SPEAK OUT!&reg;, Ampcare, and certification as a Lingraphica specialist for speech‑generating communication devices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p class="section-intro">
+        To learn more or request an appointment, please reach out using the contact details below.
+      </p>
+
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:LindsaySnyderSLP@gmail.com">LindsaySnyderSLP@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+15613465103">(561) 346‑5103</a></p>
+        <p><strong>Location:</strong> Adult speech‑language pathology services in Martin County, FL</p>
+        <p><strong>Visits:</strong> In‑person and virtual therapy options available</p>
+        <p><strong>Hours:</strong> By appointment</p>
+        <p style="margin-top: 12px;">
+          <em>Please avoid including sensitive medical details in online messages. We can discuss specifics during a secure consultation.</em>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        © <span id="year"></span> Lindsay Snyder, M.S. CCC‑SLP. All rights reserved.
+      </div>
+      <div>
+        For informational purposes only. This site does not provide medical or emergency care.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
