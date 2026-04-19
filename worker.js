@@ -45,7 +45,7 @@ async function handleContact(request, env) {
       return json({ ok: false, error: "Server is not configured for email delivery yet." }, 500);
     }
 
-    const subject = `New website inquiry from ${name}`;
+    const subject = `LindsaySnyderSLP | New website inquiry from ${name}`;
     const submittedAt = new Date().toLocaleString("en-US", {
       dateStyle: "medium",
       timeStyle: "short",
@@ -53,19 +53,43 @@ async function handleContact(request, env) {
     });
 
     const html = `
-      <div style="font-family: Arial, sans-serif; color: #253036; line-height: 1.6;">
-        <h2 style="margin-bottom: 12px;">New website inquiry</h2>
-        <p><strong>Name:</strong> ${escapeHtml(name)}</p>
-        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(phone || "Not provided")}</p>
-        <p><strong>Submitted:</strong> ${escapeHtml(submittedAt)}</p>
-        <hr style="border: none; border-top: 1px solid #dde6ea; margin: 18px 0;" />
-        <p><strong>Message:</strong></p>
-        <p style="white-space: pre-wrap;">${escapeHtml(message)}</p>
+      <div style="font-family: Arial, sans-serif; background: #f6fafb; padding: 24px; color: #253036; line-height: 1.6;">
+        <div style="max-width: 680px; margin: 0 auto; background: #ffffff; border: 1px solid #dde6ea; border-radius: 18px; overflow: hidden; box-shadow: 0 12px 32px rgba(18, 52, 63, 0.08);">
+          <div style="padding: 20px 24px; background: linear-gradient(120deg, rgba(216, 238, 241, 0.95), rgba(255, 255, 255, 0.95)); border-bottom: 1px solid #dde6ea;">
+            <div style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #d88fa8; font-weight: 700;">LindsaySnyderSLP</div>
+            <h2 style="margin: 8px 0 0; font-size: 24px; line-height: 1.3; color: #253036;">New website inquiry</h2>
+          </div>
+          <div style="padding: 24px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="padding: 0 0 10px; font-weight: 700; width: 120px; vertical-align: top;">Name</td>
+                <td style="padding: 0 0 10px;">${escapeHtml(name)}</td>
+              </tr>
+              <tr>
+                <td style="padding: 0 0 10px; font-weight: 700; width: 120px; vertical-align: top;">Email</td>
+                <td style="padding: 0 0 10px;"><a href="mailto:${escapeHtml(email)}" style="color: #2a6f7b; text-decoration: none;">${escapeHtml(email)}</a></td>
+              </tr>
+              <tr>
+                <td style="padding: 0 0 10px; font-weight: 700; width: 120px; vertical-align: top;">Phone</td>
+                <td style="padding: 0 0 10px;">${escapeHtml(phone || "Not provided")}</td>
+              </tr>
+              <tr>
+                <td style="padding: 0 0 10px; font-weight: 700; width: 120px; vertical-align: top;">Submitted</td>
+                <td style="padding: 0 0 10px;">${escapeHtml(submittedAt)}</td>
+              </tr>
+            </table>
+
+            <div style="margin-top: 20px; padding-top: 18px; border-top: 1px solid #dde6ea;">
+              <div style="font-weight: 700; margin-bottom: 8px;">Message</div>
+              <div style="white-space: pre-wrap; background: #f9fbfc; border: 1px solid #e5edf0; border-radius: 12px; padding: 14px 16px;">${escapeHtml(message)}</div>
+            </div>
+          </div>
+        </div>
       </div>
     `;
 
     const text = [
+      "LindsaySnyderSLP",
       "New website inquiry",
       "",
       `Name: ${name}`,
@@ -84,7 +108,7 @@ async function handleContact(request, env) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: env.CONTACT_FROM_EMAIL,
+        from: `LindsaySnyderSLP <${env.CONTACT_FROM_EMAIL}>`,
         to: [env.CONTACT_TO_EMAIL],
         reply_to: email,
         subject,
