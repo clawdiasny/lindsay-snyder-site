@@ -4,6 +4,10 @@
   "main": "worker.js",
   "compatibility_date": "2026-04-19",
   "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "CONTACT_FROM_EMAIL": "info@lindsaysnyderslp.com",
+    "CONTACT_TO_EMAIL": "lindsaysnyder@gmail.com"
+  },
   "assets": {
     "directory": ".",
     "binding": "ASSETS"
