@@ -1,16 +1,16 @@
-<!-- Version: 1.1.0 | Generated: 2026-04-19 13:58 EDT -->
+<!-- Version: 1.0.0 | Generated: 2026-04-19 14:14 EDT -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact | Lindsay Snyder, M.S. CCC‑SLP</title>
+  <title>FREE Downloads | Lindsay Snyder, M.S. CCC‑SLP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Contact Lindsay Snyder, M.S. CCC‑SLP for adult speech-language pathology services in Martin County, FL."
+    content="Free downloadable tools and printable resources from Lindsay Snyder, M.S. CCC‑SLP."
   />
-  <meta property="og:title" content="Contact | Lindsay Snyder, M.S. CCC‑SLP" />
-  <meta property="og:description" content="Contact Lindsay Snyder, M.S. CCC‑SLP for adult speech-language pathology services in Martin County, FL." />
+  <meta property="og:title" content="FREE Downloads | Lindsay Snyder, M.S. CCC‑SLP" />
+  <meta property="og:description" content="Free downloadable tools and printable resources from Lindsay Snyder, M.S. CCC‑SLP." />
   <meta property="og:image" content="lindsay.png" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,14 +25,13 @@
       --bg-alt: #ffffff;
       --primary: #d88fa8;
       --primary-soft: #fbe9f1;
+      --accent: #f2b485;
       --ink: #253036;
       --muted: #6c7a83;
       --border: #dde6ea;
       --max-width: 980px;
       --radius-md: 14px;
       --shadow-soft: 0 18px 45px rgba(18, 52, 63, 0.08);
-      --success: #2f7a55;
-      --error: #b14b5a;
     }
     * { box-sizing: border-box; }
     body {
@@ -152,97 +151,45 @@
       margin-bottom: 6px;
       font-family: "Playfair Display", serif;
     }
-    .contact-layout {
+    .downloads-grid {
       display: grid;
-      grid-template-columns: minmax(280px, 1fr) minmax(0, 1.25fr);
-      gap: 22px;
-      align-items: start;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
     }
-    .contact-details,
-    .contact-form-card {
+    .download-card {
+      background: var(--bg-alt);
       border-radius: 18px;
-      padding: 18px 18px 16px;
+      padding: 20px 18px 18px;
       border: 1px solid rgba(221, 230, 234, 0.9);
       box-shadow: 0 12px 28px rgba(18, 52, 63, 0.06);
-      background: var(--bg-alt);
     }
-    .contact-details {
-      color: var(--muted);
-      background: rgba(216, 238, 241, 0.45);
-      border-color: rgba(188, 213, 218, 0.8);
-    }
-    .contact-details p { margin: 6px 0; }
-    .contact-form-card h3 {
+    .download-card h3 {
       margin-top: 0;
       margin-bottom: 8px;
       font-size: 1.08rem;
       font-family: "Playfair Display", serif;
     }
-    .contact-form-card p {
-      margin-top: 0;
+    .download-card p {
+      margin: 0 0 12px;
       color: var(--muted);
       font-size: 0.94rem;
     }
-    .field {
-      margin-bottom: 14px;
-    }
-    .field label {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--ink);
-    }
-    .field input,
-    .field textarea {
-      width: 100%;
-      padding: 12px 13px;
-      border-radius: 12px;
-      border: 1px solid rgba(188, 213, 218, 0.95);
-      background: #fff;
-      color: var(--ink);
-      font: inherit;
-    }
-    .field textarea {
-      min-height: 150px;
-      resize: vertical;
-    }
-    .field input:focus,
-    .field textarea:focus {
-      outline: none;
-      border-color: rgba(216, 143, 168, 0.9);
-      box-shadow: 0 0 0 4px rgba(251, 233, 241, 0.9);
-    }
-    .btn-primary {
+    .download-link {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #2a6f7b, #245b64);
-      color: #fff;
-      padding: 10px 19px;
+      padding: 9px 15px;
       border-radius: 999px;
-      font-size: 0.92rem;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 12px 26px rgba(26, 78, 89, 0.45);
+      background: #f2b485;
+      color: #253036;
+      font-weight: 600;
+      box-shadow: 0 6px 14px rgba(18, 52, 63, 0.18);
     }
-    .btn-primary:disabled {
-      opacity: 0.7;
-      cursor: wait;
-    }
-    .form-status {
-      min-height: 24px;
-      margin-top: 12px;
-      font-size: 0.9rem;
+    .download-link:hover { text-decoration: none; }
+    .small-note {
+      margin-top: 10px;
+      font-size: 0.84rem;
       color: var(--muted);
-    }
-    .form-status.success { color: var(--success); }
-    .form-status.error { color: var(--error); }
-    .honeypot {
-      position: absolute;
-      left: -9999px;
-      opacity: 0;
-      pointer-events: none;
     }
     footer {
       border-top: 1px solid rgba(221, 230, 234, 0.9);
@@ -269,7 +216,7 @@
       .page-hero { margin-top: 14px; padding: 24px 18px 20px; }
       h1 { font-size: 1.7rem; }
       .nav-links { justify-content: center; gap: 8px; margin-top: 8px; }
-      .contact-layout { grid-template-columns: 1fr; }
+      .downloads-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -282,11 +229,11 @@
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="services.html">Services &amp; Adults Served</a>
-        <a href="free-downloads.html">FREE Downloads</a>
+        <a href="services.html">Services</a>
+        <a href="free-downloads.html" class="active" aria-current="page">FREE Downloads</a>
         <a href="resources.html">Resources</a>
         <a href="https://www.instagram.com/lindsaysnyderslp" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="contact.html" class="nav-cta active" aria-current="page">Contact</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
       </div>
     </div>
   </header>
@@ -294,65 +241,46 @@
   <main class="container">
     <section class="page-hero">
       <div class="page-hero-inner">
-        <div class="tagline">Contact</div>
-        <h1>Reach out to learn more or request an appointment.</h1>
+        <div class="tagline">FREE Downloads</div>
+        <h1>Free tools you can download and use right away.</h1>
         <p class="page-intro">
-          If you have questions about services, availability, or whether Lindsay may be a good fit, use the form below or the direct contact details to get in touch.
+          Lindsay creates practical resources for adults and families that support communication, daily routines, and home practice. These downloads are designed to be simple, useful, and easy to access.
         </p>
       </div>
     </section>
 
     <section>
-      <h2>Contact</h2>
+      <h2>Available Downloads</h2>
       <p class="section-intro">
-        Please avoid including highly sensitive medical details in an online form. A secure consultation can cover the specifics.
+        More printable resources can be added here over time. Right now, this page highlights the downloadable materials currently available on the site.
       </p>
 
-      <div class="contact-layout">
-        <div class="contact-details">
-          <p><strong>Email:</strong> <a href="mailto:LindsaySnyderSLP@gmail.com">LindsaySnyderSLP@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+15613465103">(561) 346‑5103</a></p>
-          <p><strong>Location:</strong> Adult speech‑language pathology services in Martin County, FL</p>
-          <p><strong>Visits:</strong> In‑person and virtual therapy options available</p>
-          <p><strong>Hours:</strong> By appointment</p>
-          <p style="margin-top: 12px;">
-            <em>Please avoid including sensitive medical details in online messages. We can discuss specifics during a secure consultation.</em>
+      <div class="downloads-grid">
+        <div class="download-card">
+          <h3>Low-tech communication device board</h3>
+          <p>
+            A printable communication aid designed for adult use, helpful for supporting basic communication in everyday settings.
           </p>
+          <a href="low-tech-communication-board.pdf" download class="download-link">Download PDF</a>
+          <div class="small-note">Printable and ready to use at home, in therapy, or during recovery.</div>
         </div>
 
-        <div class="contact-form-card">
-          <h3>Send a message</h3>
-          <p>Share a few details and Lindsay can follow up directly.</p>
+        <div class="download-card">
+          <h3>Cognitive-Communication Wellness Group flyer</h3>
+          <p>
+            Download and share the flyer for Lindsay’s monthly communication wellness group for adults with cognitive or communication changes.
+          </p>
+          <a href="cognitive-communication-wellness-group.jpg" download class="download-link">Download flyer</a>
+          <div class="small-note">Useful for sharing with family members, support groups, or referral partners.</div>
+        </div>
 
-          <form id="contact-form" novalidate>
-            <div class="field">
-              <label for="name">Name *</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
-            </div>
-
-            <div class="field">
-              <label for="email">Email *</label>
-              <input id="email" name="email" type="email" autocomplete="email" required />
-            </div>
-
-            <div class="field">
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" />
-            </div>
-
-            <div class="field honeypot" aria-hidden="true">
-              <label for="website">Website</label>
-              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
-            </div>
-
-            <div class="field">
-              <label for="message">How can Lindsay help? *</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-
-            <button type="submit" class="btn-primary" id="submit-button">Send message</button>
-            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
-          </form>
+        <div class="download-card">
+          <h3>Stroke Support Group flyer</h3>
+          <p>
+            A downloadable flyer for the monthly stroke support group offered through Encompass Health for survivors and caregivers.
+          </p>
+          <a href="stroke-support-group-encompass-health.pdf" download class="download-link">Download PDF</a>
+          <div class="small-note">Includes meeting details for in-person and virtual support options.</div>
         </div>
       </div>
     </section>
@@ -371,53 +299,6 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    const form = document.getElementById("contact-form");
-    const statusEl = document.getElementById("form-status");
-    const submitButton = document.getElementById("submit-button");
-
-    form.addEventListener("submit", async (event) => {
-      event.preventDefault();
-
-      const formData = new FormData(form);
-      const payload = Object.fromEntries(formData.entries());
-
-      if (!payload.name || !payload.email || !payload.message) {
-        setStatus("Please complete the required fields.", "error");
-        return;
-      }
-
-      submitButton.disabled = true;
-      setStatus("Sending your message...", "");
-
-      try {
-        const response = await fetch("/api/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        });
-
-        const result = await response.json();
-
-        if (!response.ok || !result.ok) {
-          throw new Error(result.error || "Something went wrong. Please try again.");
-        }
-
-        form.reset();
-        setStatus("Thanks, your message has been sent. Lindsay will be in touch.", "success");
-      } catch (error) {
-        setStatus(error.message || "Something went wrong. Please try again later.", "error");
-      } finally {
-        submitButton.disabled = false;
-      }
-    });
-
-    function setStatus(message, type) {
-      statusEl.textContent = message;
-      statusEl.className = "form-status" + (type ? ` ${type}` : "");
-    }
   </script>
 </body>
 </html>
