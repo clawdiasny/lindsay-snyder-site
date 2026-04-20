@@ -197,6 +197,38 @@
       font-family: "Playfair Display", serif;
       font-size: 0.98rem;
     }
+    .download-category {
+      margin-top: 18px;
+    }
+    .download-category h3 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+      font-family: "Playfair Display", serif;
+    }
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .download-item {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 12px;
+      border: 1px solid rgba(221, 230, 234, 0.9);
+      box-shadow: 0 8px 20px rgba(18, 52, 63, 0.06);
+    }
+    .download-item img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid rgba(221, 230, 234, 0.9);
+      box-shadow: 0 6px 14px rgba(18, 52, 63, 0.08);
+      margin-bottom: 10px;
+    }
+    .download-item a.download-link {
+      display: inline-block;
+      margin-top: 6px;
+      font-weight: 600;
+    }
     footer {
       border-top: 1px solid rgba(221, 230, 234, 0.9);
       padding: 18px 16px 22px;
@@ -261,6 +293,71 @@
       <p class="section-intro">
         Education, simple tools, and community options can make a meaningful difference. These resources are a starting point for adults and families.
       </p>
+
+      <div class="card">
+        <h3>Free Downloads</h3>
+        <p style="margin: 0 0 8px; font-size: 0.94rem; color: var(--muted);">
+          Download printable tools created for adults and families. These materials are organized by topic so it is easier to find the right support.
+        </p>
+
+        <div class="download-category">
+          <h3>Communication</h3>
+          <div class="download-grid">
+            <div class="download-item">
+              <a href="downloads/ls-aac-no-info.pdf" download>
+                <img src="downloads/ls-aac-no-info-thumb.jpg" alt="AAC communication support board preview" />
+              </a>
+              <strong>AAC Communication Support Board</strong>
+              <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">Printable low-tech communication support for adult use.</p>
+              <a class="download-link" href="downloads/ls-aac-no-info.pdf" download>Download PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-category">
+          <h3>Cognition</h3>
+          <div class="download-grid">
+            <div class="download-item">
+              <a href="downloads/memory-strategies-handout.pdf" download>
+                <img src="downloads/memory-strategies-handout-thumb.jpg" alt="Memory strategies handout preview" />
+              </a>
+              <strong>Memory Strategies Handout</strong>
+              <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">Simple strategies to support recall and everyday follow-through.</p>
+              <a class="download-link" href="downloads/memory-strategies-handout.pdf" download>Download PDF</a>
+            </div>
+            <div class="download-item">
+              <a href="downloads/number-letter-category-activity.pdf" download>
+                <img src="downloads/number-letter-category-activity-thumb.jpg" alt="Number letter category activity preview" />
+              </a>
+              <strong>Number Letter Category Activity</strong>
+              <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">A structured activity for attention, flexibility, and category-based thinking.</p>
+              <a class="download-link" href="downloads/number-letter-category-activity.pdf" download>Download PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-category">
+          <h3>Speak Out / Voice</h3>
+          <div class="download-grid">
+            <div class="download-item">
+              <a href="downloads/speak-out-cards.pdf" download>
+                <img src="downloads/speak-out-cards-thumb.jpg" alt="Speak Out cards preview" />
+              </a>
+              <strong>Speak Out Cards</strong>
+              <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">Printable practice supports for voice carryover and daily use.</p>
+              <a class="download-link" href="downloads/speak-out-cards.pdf" download>Download PDF</a>
+            </div>
+            <div class="download-item">
+              <a href="downloads/speak-out-qr-code-handout.pdf" download>
+                <img src="downloads/speak-out-qr-code-handout-thumb.jpg" alt="Speak Out QR code handout preview" />
+              </a>
+              <strong>Speak Out QR Code Handout</strong>
+              <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">Quick-access voice practice materials in a simple handout format.</p>
+              <a class="download-link" href="downloads/speak-out-qr-code-handout.pdf" download>Download PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="card">
         <p style="margin: 0 0 8px; font-size: 0.94rem; color: var(--muted);">
