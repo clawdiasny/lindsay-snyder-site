@@ -39,6 +39,8 @@
   - New task: research high-end / concierge speech-language and adjacent boutique healthcare sites to design a more luxury/concierge version of the homepage as `clawdia.html`.
   - Goals: emphasize high-touch, calm, premium experience while staying clinically grounded and adult-focused.
   - Status: research and design work in progress; `clawdia.html` not yet created as of 2026-03-25 evening.
+- **Website workflow instruction**
+  - Any time Cortlon wants to work on the website, reference `Website.md` for the workflow and publishing rules first.
 
 ## Principles for Future Work
 - Never fabricate precise, live financial quotes; when giving approximate prices, label them clearly as approximate/delayed.
