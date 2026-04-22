@@ -1,0 +1,11 @@
+{
+  "name": "lindsay-snyder-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.12.0"
+  }
+}
