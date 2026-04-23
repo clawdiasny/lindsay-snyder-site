@@ -51,3 +51,5 @@
 - When new recurring workflows are created (like daily briefs), document them here so they’re easy to remember and adjust later.
 - For local music/event discovery, maintain the watchlist in `state/local-music-watchlist.json` and prefer verified venue pages plus public event sources over Facebook.
 - The `Clawdia` calendar should become a curated around-town calendar for concerts, seafood festivals, green markets, art festivals, and other worthwhile local things to do across Martin and Palm Beach counties.
+- For web event research, if Ollama fetch/search is weak or fails, fall back to Brave search or stronger alternate public sources.
+- Never add events to the calendar if they have already happened.
