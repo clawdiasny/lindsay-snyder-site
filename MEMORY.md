@@ -53,3 +53,4 @@
 - The `Clawdia` calendar should become a curated around-town calendar for concerts, seafood festivals, green markets, art festivals, and other worthwhile local things to do across Martin and Palm Beach counties.
 - For web event research, if Ollama fetch/search is weak or fails, fall back to Brave search or stronger alternate public sources.
 - Never add events to the calendar if they have already happened.
+- If an event later appears canceled, rescheduled, or otherwise no longer valid, remove or correct it on the Clawdia calendar.
