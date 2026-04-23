@@ -49,3 +49,4 @@
 - Include direct source links when surfacing external research so Cortlon can quickly dive deeper.
 - Prefer Telegram for timely alerts; use Control UI for heavier context and configuration.
 - When new recurring workflows are created (like daily briefs), document them here so they’re easy to remember and adjust later.
+- For local music/event discovery, maintain the watchlist in `state/local-music-watchlist.json` and prefer verified venue pages plus public event sources over Facebook.

@@ -1,0 +1,73 @@
+{
+  "createdAt": "2026-04-22T20:41:00-04:00",
+  "calendar": "Clawdia",
+  "region": {
+    "counties": ["Martin County, FL", "Palm Beach County, FL"]
+  },
+  "venues": [
+    {
+      "name": "Terra Fermata",
+      "city": "Stuart, FL",
+      "url": "https://www.terrafermata.com/events"
+    },
+    {
+      "name": "Lyric Theatre",
+      "city": "Stuart, FL",
+      "url": "https://www.lyrictheatre.com/upcoming-events"
+    },
+    {
+      "name": "Abacoa Amphitheatre",
+      "city": "Jupiter, FL",
+      "url": "https://songkick.com/venues/130888-abacoa-amphitheatre"
+    },
+    {
+      "name": "Kravis Center",
+      "city": "West Palm Beach, FL",
+      "url": "https://www.kravis.org/events/"
+    },
+    {
+      "name": "iTHINK Financial Amphitheatre",
+      "city": "West Palm Beach, FL",
+      "url": "https://www.livenation.com/venue/KovZpZAJ7JEA/ithink-financial-amphitheatre-events"
+    }
+  ],
+  "artistGroups": {
+    "reggae_surf_alt": [
+      "Donavon Frankenreiter",
+      "The Elovaters",
+      "Stick Figure",
+      "Slightly Stoopid",
+      "Dirty Heads",
+      "The Movement",
+      "Rebelution",
+      "Pepper",
+      "The Hip Abduction",
+      "Little Stranger",
+      "Sublime With Rome",
+      "Sublime"
+    ],
+    "country": [
+      "Ella Langley",
+      "Parker McCollum",
+      "Zach Top",
+      "Turnpike Troubadours",
+      "Billy Currington",
+      "Kenny Chesney",
+      "Chris Stapleton",
+      "Lainey Wilson",
+      "Reckless Kelly",
+      "Eli Young Band"
+    ],
+    "legacy_pop_special": [
+      "Pink Martini",
+      "Pitbull",
+      "Alanis Morissette",
+      "Queen"
+    ]
+  },
+  "notes": [
+    "Add only verified upcoming events.",
+    "Prefer venue pages, Songkick, Bandsintown, Ticketmaster, and official sources over Facebook.",
+    "Add worthwhile matches to the Clawdia calendar once verified."
+  ]
+}
