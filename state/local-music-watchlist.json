@@ -1,6 +1,7 @@
 {
   "createdAt": "2026-04-22T20:41:00-04:00",
   "calendar": "Clawdia",
+  "purpose": "Curated around-town calendar for concerts, festivals, markets, art events, and other worthwhile local things to do.",
   "region": {
     "counties": ["Martin County, FL", "Palm Beach County, FL"]
   },
@@ -65,9 +66,33 @@
       "Queen"
     ]
   },
+  "eventClasses": {
+    "concerts": {
+      "enabled": true,
+      "description": "Concerts and live music matched to Cortlon's taste and nearby venue calendars."
+    },
+    "food_festivals": {
+      "enabled": true,
+      "keywords": ["seafood festival", "food festival", "wine festival", "beer festival", "tasting"]
+    },
+    "markets": {
+      "enabled": true,
+      "keywords": ["green market", "farmers market", "fresh market", "night market"]
+    },
+    "art_culture": {
+      "enabled": true,
+      "keywords": ["art festival", "art fair", "gallery walk", "street fair", "craft fair"]
+    },
+    "general_fun": {
+      "enabled": true,
+      "keywords": ["waterfront event", "community festival", "seasonal event", "worth driving to"]
+    }
+  },
   "notes": [
     "Add only verified upcoming events.",
     "Prefer venue pages, Songkick, Bandsintown, Ticketmaster, and official sources over Facebook.",
-    "Add worthwhile matches to the Clawdia calendar once verified."
+    "Add worthwhile matches to the Clawdia calendar once verified.",
+    "Take tasteful liberty adding things that seem genuinely fun, local, and aligned with Cortlon's likely interests.",
+    "Treat this as one unified around-town discovery workflow, not separate silos."
   ]
 }
