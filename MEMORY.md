@@ -19,7 +19,9 @@
 
 ## OpenClaw Setup
 - Gateway: running locally on Mac mini; dashboard reachable on 127.0.0.1:18789.
-- Main agent model: openai-codex/gpt-5.1 with OpenAI API key configured via `openclaw config set openai.apiKey`.
+- Main agent access: connected to OpenAI Codex by auth, not by manually configured API key.
+- Host hardware: Mac mini with 8GB RAM.
+- Practical guardrail: keep Cortlon honest about local compute limits on this machine, and flag plans that are likely too heavy for 8GB RAM, especially attempts to run larger local models like Gemma.
 - Channels:
   - Control UI / webchat: primary for deep work (files, cron jobs, configuration).
   - Telegram (ID: 8733154826): used for daily briefs and notifications.
